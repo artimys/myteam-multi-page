@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+// https://design2tailwind.com/blog/tailwindcss-container-component/
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +9,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+
+        // padding: {
+        //   DEFAULT: "1rem",
+        //   desktop: "10.31rem",
+        // },
+
+        // Customize breakpoints for .container
+        screens: {
+          desktop: "1440px",
+        },
+      },
+
       colors: {
         primary: {
           "midnight-green": "hsl(186, 98%, 17%)", // #014e56
