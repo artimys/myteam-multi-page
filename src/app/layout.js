@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${livvic.className} bg-primary-midnight-green`}>
         <Header />
-        {children}
+        <main>{children}</main>
         <ReadyGetStarted />
         <Footer />
       </body>

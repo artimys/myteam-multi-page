@@ -1,5 +1,29 @@
 function about() {
-  return <div>about page</div>;
+  return (
+    <>
+      <div className="container relative bg-about-pattern-right">
+        <div className="grid grid-cols-1 max-w-[1110px] mx-auto text-center xl:text-left xl:grid-cols-[1fr_2fr] gap-4 md:gap-6">
+          <div className="xl:mt-5">
+            <h1>About</h1>
+          </div>
+
+          <div className="flex items-end mx-auto max-w-sm md:max-w-[457px] xl:max-w-[730px] paragraph-bar xl:before:bg-primary-light-coral xl:pt-10">
+            <p className="text-[15px] leading-[28px] xl:text-lg xl:leading-7 font-semibold text-primary-white">
+              We help companies build dynamic teams made up of top global
+              talent. Using our network of passionate professionals we drive
+              innovation and deliver incredible outcomes. Talented, diverse
+              teams shape the best products and experiences. We'll bring those
+              teams to you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="container relative h-80 bg-secondary-deep-jungle-green">
+        <h2>Meet the directors</h2>
+      </div>
+    </>
+  );
 }
 
 export const metadata = {

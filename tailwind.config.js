@@ -41,6 +41,8 @@ module.exports = {
 
       backgroundImage: {
         contactus: "url('/images/bg-pattern-home-6-about-5.svg')",
+        "about-mobile-nav-1":
+          "url('/images/bg-pattern-about-1-mobile-nav-1.svg')",
       },
     },
   },
