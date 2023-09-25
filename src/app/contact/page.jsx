@@ -1,5 +1,11 @@
 function contact() {
-  return <div>contact page</div>;
+  return (
+    <>
+      <div className="container text-center h-80 bg-primary-midnight-green py-28">
+        <h1>Contact</h1>
+      </div>
+    </>
+  );
 }
 
 export const metadata = {

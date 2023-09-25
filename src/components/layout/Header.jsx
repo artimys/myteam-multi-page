@@ -3,7 +3,7 @@ import MyTeamLogo from "../svg/MyTeamLogo";
 
 function Header() {
   return (
-    <header className="container mt-10 mb-20 md:mb-28 md:mt-16">
+    <header className="container pt-10 pb-20 md:pb-28 md:pt-16 bg-primary-midnight-green">
       <div className="flex flow-row max-w-[1110px] mx-auto">
         {/* TODO sm md 128px, lg xl 160 */}
         <Link href="/" className="mr-20">

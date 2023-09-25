@@ -2,31 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #f2f2f2;
 }
-*/
 
 @layer base {
   a {
@@ -35,6 +13,10 @@ body {
 
   h1 {
     @apply font-bold text-[40px] leading-[40px] text-primary-white md:text-[64px] md:leading-[56px];
+  }
+
+  h2 {
+    @apply font-bold text-[32px] leading-[32px] text-primary-white xl:text-[48px] xl:leading-[48px];
   }
 }
 
@@ -67,11 +49,11 @@ body {
     @apply bg-no-repeat bg-about-mobile-nav-1 bg-[right_-99px_bottom_-99px] md:bg-[right_-99px_bottom] pb-28;
   }
 
-  .shadow-coral {
-    box-shadow: 0 0 0 100vmax #f67e7e;
+  .bg-about-pattern-clients {
+    @apply bg-no-repeat bg-about-4 bg-[left_-100px_top_-99px] md:bg-[left_top_-99px] xl:bg-[left_top];
   }
 
-  .clip-coral {
-    clip-path: inset(0 -100vmax);
+  .shadow-coral {
+    box-shadow: 0 0 0 100vmax #f67e7e;
   }
 }

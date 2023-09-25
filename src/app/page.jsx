@@ -1,8 +1,7 @@
 export default function Home() {
   return (
     <>
-      {/* <HeroSection /> */}
-      <div className="container relative bg-home-two-patterns">
+      <div className="container relative bg-home-two-patterns bg-primary-midnight-green">
         <div className="grid grid-cols-1 max-w-[1110px] mx-auto text-center xl:text-left xl:grid-cols-[1.5fr_1fr] gap-4 md:gap-6">
           <div>
             <h1 className="xl:text-[100px] xl:leading-[100px] xl:w-[590px]">
@@ -22,8 +21,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container relative h-80 bg-secondary-sacramento-state-green">
-        <h2>Build & Manage ...</h2>
+      <div className="container text-center h-80 bg-secondary-sacramento-state-green py-28">
+        <h2>Build & manage distributed teams like no one else.</h2>
+      </div>
+
+      <div className="container text-center h-80 bg-secondary-deep-jungle-green py-28">
+        <h2>
+          Delivering real results for top companies. Some of our success stories
+        </h2>
       </div>
     </>
   );

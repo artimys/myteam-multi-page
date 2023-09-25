@@ -1,7 +1,14 @@
+import Image from "next/image";
+import LogoTheVerge from "../../../public/images/logo-the-verge.png";
+import LogoJakartaPost from "../../../public/images/logo-jakarta-post.png";
+import LogoTheGuardian from "../../../public/images/logo-the-guardian.png";
+import LogoTechRadar from "../../../public/images/logo-tech-radar.png";
+import LogoGadgetsNow from "../../../public/images/logo-gadgets-now.png";
+
 function about() {
   return (
     <>
-      <div className="container relative bg-about-pattern-right">
+      <div className="container relative bg-about-pattern-right bg-primary-midnight-green">
         <div className="grid grid-cols-1 max-w-[1110px] mx-auto text-center xl:text-left xl:grid-cols-[1fr_2fr] gap-4 md:gap-6">
           <div className="xl:mt-5">
             <h1>About</h1>
@@ -19,8 +26,40 @@ function about() {
         </div>
       </div>
 
-      <div className="container relative h-80 bg-secondary-deep-jungle-green">
+      <div className="container text-center h-80 bg-secondary-deep-jungle-green py-28">
         <h2>Meet the directors</h2>
+      </div>
+
+      <div className="container py-24 md:py-20 xl:pb-28 xl:pt-32 bg-secondary-sacramento-state-green bg-about-pattern-clients">
+        <div className="max-w-[689px] xl:max-w-[1110px] mx-auto space-y-12 text-center">
+          <h2>Some of our clients</h2>
+          <ul className="flex flex-col items-center gap-12 md:flex-row">
+            <li>
+              <Image src={LogoTheVerge} alt="The Verge Logo" xwidth="162" />
+            </li>
+            <li>
+              {/* TODO - make smaller image at 375, aka responsive */}
+              <Image
+                src={LogoJakartaPost}
+                alt="Jakarta Post Logo"
+                xwidth="166"
+              />
+            </li>
+            <li>
+              <Image
+                src={LogoTheGuardian}
+                alt="The Guardian Logo"
+                xwidth="162"
+              />
+            </li>
+            <li>
+              <Image src={LogoTechRadar} alt="Tech Radar Logo" xwidth="162" />
+            </li>
+            <li>
+              <Image src={LogoGadgetsNow} alt="Gadgets Now Logo" xwidth="162" />
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );
