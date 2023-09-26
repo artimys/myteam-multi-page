@@ -8,6 +8,10 @@ body {
 
 @layer base {
   a {
+    @apply font-semibold transition-colors duration-150;
+  }
+
+  button {
     @apply transition-colors duration-150;
   }
 
@@ -36,6 +40,16 @@ body {
   @apply text-secondary-sacramento-state-green border-secondary-sacramento-state-green hover:text-primary-white hover:bg-secondary-sacramento-state-green;
 }
 
+/* Meet the directors button */
+
+.btn-panel {
+  @apply p-5 translate-y-1/2 rounded-full bg-primary-light-coral hover:bg-secondary-rapture-blue;
+}
+
+.btn-panel-active {
+  @apply rotate-45 bg-secondary-rapture-blue hover:bg-primary-light-coral;
+}
+
 @layer utilities {
   .paragraph-bar {
     @apply xl:before:absolute xl:before:w-[50px] xl:before:bg-secondary-rapture-blue xl:before:h-1 xl:before:top-0;
@@ -47,6 +61,10 @@ body {
 
   .bg-about-pattern-right {
     @apply bg-no-repeat bg-about-mobile-nav-1 bg-[right_-99px_bottom_-99px] md:bg-[right_-99px_bottom] pb-28;
+  }
+
+  .bg-about-pattern-directors {
+    @apply bg-no-repeat pb-[7.4rem] sm:pb-[8rem] lg:pb-[10rem] bg-[url(/images/bg-pattern-about-2-contact-1.svg),_url(/images/bg-pattern-home-4-about-3.svg)] bg-[position:left_-99px_top_-100px,_right_bottom] md:bg-[position:left_-99px_top,_right_bottom];
   }
 
   .bg-about-pattern-clients {

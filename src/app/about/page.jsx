@@ -5,6 +5,8 @@ import LogoTheGuardian from "../../../public/images/logo-the-guardian.png";
 import LogoTechRadar from "../../../public/images/logo-tech-radar.png";
 import LogoGadgetsNow from "../../../public/images/logo-gadgets-now.png";
 
+import MeetDirectorsGrid from "../../components/about/meet-directors/MeetDirectorsGrid.jsx";
+
 function about() {
   return (
     <>
@@ -26,8 +28,12 @@ function about() {
         </div>
       </div>
 
-      <div className="container text-center h-80 bg-secondary-deep-jungle-green py-28">
-        <h2>Meet the directors</h2>
+      <div className="container bg-secondary-deep-jungle-green bg-about-pattern-directors">
+        <h2 className="pt-24 pb-12 text-center xl:pt-36 xl:pb-16">
+          Meet the directors
+        </h2>
+
+        <MeetDirectorsGrid />
       </div>
 
       <div className="container py-24 md:py-20 xl:pb-28 xl:pt-32 bg-secondary-sacramento-state-green bg-about-pattern-clients">
