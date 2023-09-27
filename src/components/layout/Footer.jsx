@@ -1,8 +1,8 @@
 import Link from "next/link";
-import MyTeamLogo from "../svg/MyTeamLogo";
-import IconFacebook from "../svg/IconFacebook";
-import IconPinterest from "../svg/IconPinterest";
-import IconTwitter from "../svg/IconTwitter";
+import MyTeamLogo from "@/components/svg/MyTeamLogo";
+import IconFacebook from "@/components/svg/IconFacebook";
+import IconPinterest from "@/components/svg/IconPinterest";
+import IconTwitter from "@/components/svg/IconTwitter";
 
 function Footer() {
   return (

@@ -4,8 +4,7 @@ import AvatarCruz from "../../../../public/images/avatar-cruz.jpg";
 import AvatarDrake from "../../../../public/images/avatar-drake.jpg";
 import AvatarGriffin from "../../../../public/images/avatar-griffin.jpg";
 import AvatarAden from "../../../../public/images/avatar-aden.jpg";
-
-import MeetDirectorItem from "./MeetDirectorItem";
+import MeetDirectorItem from "@/components/about/meet-directors/MeetDirectorItem";
 
 function MeetDirectorsGrid({ props, children }) {
   const directors = [

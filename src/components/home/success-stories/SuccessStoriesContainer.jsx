@@ -1,7 +1,7 @@
 import AvatarKady from "../../../../public/images/avatar-kady.jpg";
 import AvatarAiysha from "../../../../public/images/avatar-aiysha.jpg";
 import AvatarArthur from "../../../../public/images/avatar-arthur.jpg";
-import SuccessStoriesItem from "./SuccessStoriesItem";
+import SuccessStoriesItem from "@/components/home/success-stories/SuccessStoriesItem";
 
 function SuccessStoriesContainer() {
   const successStories = [

@@ -55,6 +55,8 @@ body {
     @apply xl:before:absolute xl:before:w-[50px] xl:before:bg-secondary-rapture-blue xl:before:h-1 xl:before:top-0;
   }
 
+  /* Home page patterns */
+
   .bg-home-two-patterns {
     @apply bg-no-repeat pb-48 bg-[url(/images/bg-pattern-home-1.svg),_url(/images/bg-pattern-home-2.svg)] bg-[position:-200px_top,_center_bottom] xl:bg-[position:-100px_top,_right_165px_bottom];
   }
@@ -80,6 +82,8 @@ body {
     @apply bg-no-repeat bg-quotes bg-[top_center];
   }
 
+  /* About page patterns */
+
   .bg-about-pattern-directors {
     @apply bg-no-repeat pb-[7.4rem] sm:pb-[8rem] lg:pb-[10rem] bg-[url(/images/bg-pattern-about-2-contact-1.svg),_url(/images/bg-pattern-home-4-about-3.svg)] bg-[position:left_-99px_top_-100px,_right_bottom] md:bg-[position:left_-99px_top,_right_bottom];
   }
@@ -96,7 +100,13 @@ body {
     @apply bg-no-repeat bg-about-4 bg-[left_-100px_top_-99px] md:bg-[left_top_-99px] xl:bg-[left_top];
   }
 
-  .shadow-coral {
-    box-shadow: 0 0 0 100vmax #f67e7e;
+  /* Shared patterns */
+  .bg-pattern-get-started {
+    @apply bg-no-repeat
+          bg-contactus
+          pb-4
+          md:py-3
+          bg-[left_calc(100%_+_22px)]
+          xl:bg-left-bottom;
   }
 }

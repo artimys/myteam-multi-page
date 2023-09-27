@@ -1,5 +1,6 @@
-import SuccessStoriesContainer from "@/components/home/success-stories/SuccessStoriesContainer";
 import FullBleedContainer from "@/components/layout/FullBleedContainer";
+import SuccessStoriesContainer from "@/components/home/success-stories/SuccessStoriesContainer";
+import ReadyGetStarted from "@/components/layout/ReadyGetStarted";
 
 export default function Home() {
   return (
@@ -40,6 +41,8 @@ export default function Home() {
           <SuccessStoriesContainer />
         </div>
       </FullBleedContainer>
+
+      <ReadyGetStarted />
     </>
   );
 }

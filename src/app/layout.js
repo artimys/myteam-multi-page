@@ -9,9 +9,8 @@ const livvic = Livvic({
   variable: "livvic",
 });
 
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
-import ReadyGetStarted from "../components/layout/ReadyGetStarted";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Frontend Mentor | myteam website challenge - Homepage",
@@ -24,7 +23,6 @@ export default function RootLayout({ children }) {
       <body className={`${livvic.className}`}>
         <Header />
         <main>{children}</main>
-        <ReadyGetStarted />
         <Footer />
       </body>
     </html>

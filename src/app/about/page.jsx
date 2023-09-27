@@ -5,7 +5,8 @@ import LogoTheGuardian from "../../../public/images/logo-the-guardian.png";
 import LogoTechRadar from "../../../public/images/logo-tech-radar.png";
 import LogoGadgetsNow from "../../../public/images/logo-gadgets-now.png";
 
-import MeetDirectorsGrid from "../../components/about/meet-directors/MeetDirectorsGrid.jsx";
+import MeetDirectorsGrid from "@/components/about/meet-directors/MeetDirectorsGrid.jsx";
+import ReadyGetStarted from "@/components/layout/ReadyGetStarted";
 
 function about() {
   return (
@@ -67,6 +68,8 @@ function about() {
           </ul>
         </div>
       </div>
+
+      <ReadyGetStarted />
     </>
   );
 }
