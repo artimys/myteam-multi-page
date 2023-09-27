@@ -17,6 +17,7 @@ function MeetDirectorItem({ director }) {
   return (
     <div className="relative flex flex-col items-center pt-8 bg-secondary-sacramento-state-green text-primary-white">
       {showMoreInfo ? (
+        //  transform translate-y-0 transition-transform duration-500 ease-in-out hover:translate-y-4
         <div className="absolute top-0 flex flex-col items-center w-full h-full p-8 lg:px-2 xl:px-12 bg-secondary-dark-green">
           <strong className="text-lg text-secondary-rapture-blue">
             {director.name}
@@ -53,10 +54,10 @@ function MeetDirectorItem({ director }) {
       />
 
       <div className="flex flex-col mt-3 text-center">
-        <strong className="text-lg text-secondary-rapture-blue">
+        <strong className="text-lg font-bold text-secondary-rapture-blue">
           {director.name}
         </strong>
-        <em className="text-sm">{director.role}</em>
+        <em className="text-sm font-medium">{director.role}</em>
       </div>
 
       <button

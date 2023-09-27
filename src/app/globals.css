@@ -59,6 +59,31 @@ body {
     @apply bg-no-repeat pb-48 bg-[url(/images/bg-pattern-home-1.svg),_url(/images/bg-pattern-home-2.svg)] bg-[position:-200px_top,_center_bottom] xl:bg-[position:-100px_top,_right_165px_bottom];
   }
 
+  .bg-home-pattern-distributed {
+    @apply bg-no-repeat
+          pb-44 pt-36
+          bg-home-3
+          bg-[top_right_-99px]
+          lg:bg-[bottom_right_-99px];
+  }
+
+  .bg-home-pattern-stories {
+    @apply bg-no-repeat
+          pb-44 pt-36
+          sm:pb-[6rem] sm:pt-28
+          lg:py-36
+          bg-[url(/images/bg-pattern-home-4-about-3.svg),_url(/images/bg-pattern-home-5.svg)]
+          bg-[position:left_top,_right_bottom];
+  }
+
+  .bg-home-quotes-stories {
+    @apply bg-no-repeat bg-quotes bg-[top_center];
+  }
+
+  .bg-about-pattern-directors {
+    @apply bg-no-repeat pb-[7.4rem] sm:pb-[8rem] lg:pb-[10rem] bg-[url(/images/bg-pattern-about-2-contact-1.svg),_url(/images/bg-pattern-home-4-about-3.svg)] bg-[position:left_-99px_top_-100px,_right_bottom] md:bg-[position:left_-99px_top,_right_bottom];
+  }
+
   .bg-about-pattern-right {
     @apply bg-no-repeat bg-about-mobile-nav-1 bg-[right_-99px_bottom_-99px] md:bg-[right_-99px_bottom] pb-28;
   }

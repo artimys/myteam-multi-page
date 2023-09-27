@@ -1,3 +1,6 @@
+import SuccessStoriesContainer from "@/components/home/success-stories/SuccessStoriesContainer";
+import FullBleedContainer from "@/components/layout/FullBleedContainer";
+
 export default function Home() {
   return (
     <>
@@ -21,15 +24,22 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container text-center h-80 bg-secondary-sacramento-state-green py-28">
-        <h2>Build & manage distributed teams like no one else.</h2>
-      </div>
+      <FullBleedContainer classNames="bg-home-pattern-distributed bg-secondary-sacramento-state-green">
+        <div className="container text-center">
+          <h2>Build & manage distributed teams like no one else.</h2>
+        </div>
+      </FullBleedContainer>
 
-      <div className="container text-center h-80 bg-secondary-deep-jungle-green py-28">
-        <h2>
-          Delivering real results for top companies. Some of our success stories
-        </h2>
-      </div>
+      <FullBleedContainer classNames="bg-home-pattern-stories bg-secondary-deep-jungle-green">
+        <div className="container">
+          <h2 className="text-center">
+            Delivering real results for top companies. Some of our{" "}
+            <span className="text-secondary-rapture-blue">success stories</span>
+          </h2>
+
+          <SuccessStoriesContainer />
+        </div>
+      </FullBleedContainer>
     </>
   );
 }

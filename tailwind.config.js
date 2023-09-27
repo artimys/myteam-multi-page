@@ -44,6 +44,8 @@ module.exports = {
         "about-4": "url('/images/bg-pattern-about-4.svg')",
         "about-mobile-nav-1":
           "url('/images/bg-pattern-about-1-mobile-nav-1.svg')",
+        quotes: "url('/images/icon-quotes.svg')",
+        "home-3": "url('/images/bg-pattern-home-3.svg')",
       },
     },
   },
