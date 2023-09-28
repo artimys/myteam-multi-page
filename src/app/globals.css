@@ -63,7 +63,9 @@ body {
 
   .bg-home-pattern-distributed {
     @apply bg-no-repeat
-          pb-44 pt-36
+          pb-16 pt-16
+          sm:pb-24 sm:pt-28
+          lg:pb-36 lg:pt-28
           bg-home-3
           bg-[top_right_-99px]
           lg:bg-[bottom_right_-99px];

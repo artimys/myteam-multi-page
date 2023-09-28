@@ -1,4 +1,5 @@
 import FullBleedContainer from "@/components/layout/FullBleedContainer";
+import DistributedTeamsContainer from "@/components/home/distributed-teams/DistributedTeamsContainer";
 import SuccessStoriesContainer from "@/components/home/success-stories/SuccessStoriesContainer";
 import ReadyGetStarted from "@/components/layout/ReadyGetStarted";
 
@@ -28,8 +29,17 @@ export default function Home() {
       </FullBleedContainer>
 
       <FullBleedContainer classNames="bg-home-pattern-distributed bg-secondary-sacramento-state-green">
-        <div className="container text-center">
-          <h2>Build & manage distributed teams like no one else.</h2>
+        <div className="container relative grid grid-cols-1 max-w-[1110px] mx-auto xl:grid-cols-2 md:px-20 xl:px-0">
+          <div
+            className="paragraph-bar pt-9 lg:pt-14
+                before:absolute before:w-[50px] before:bg-primary-light-coral before:h-1 before:top-0"
+          >
+            <h2 className="pr-28 sm:pr-40 lg:pr-32">
+              Build & manage distributed teams like no one else.
+            </h2>
+          </div>
+
+          <DistributedTeamsContainer />
         </div>
       </FullBleedContainer>
 
@@ -39,7 +49,6 @@ export default function Home() {
             Delivering real results for top companies. Some of our{" "}
             <span className="text-secondary-rapture-blue">success stories</span>
           </h2>
-
           <SuccessStoriesContainer />
         </div>
       </FullBleedContainer>
