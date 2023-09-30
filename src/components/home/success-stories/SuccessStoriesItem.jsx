@@ -4,7 +4,7 @@ function SuccessStoriesItem({ story }) {
   return (
     <div className="flex flex-col items-center flex-1 text-center bg-home-quotes-stories text-primary-white pt-9">
       <p className="font-semibold text-[15px] leading-[25px] mb-5">
-        "{story.quote}"
+        &quot;{story.quote}&quot;
       </p>
 
       <div className="flex flex-col">

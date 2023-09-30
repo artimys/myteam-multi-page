@@ -34,7 +34,7 @@ function SuccessStoriesContainer() {
   return (
     <div className="flex flex-col gap-y-14 mt-14 sm:px-16 lg:space-x-14 lg:flex-row lg:px-0 max-w-[1110px] mx-auto">
       {successStories.map((story) => {
-        return <SuccessStoriesItem story={story} />;
+        return <SuccessStoriesItem key={story.id} story={story} />;
       })}
     </div>
   );

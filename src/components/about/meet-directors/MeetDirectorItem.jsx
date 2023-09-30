@@ -24,7 +24,7 @@ function MeetDirectorItem({ director }) {
           </strong>
 
           <p className="text-sm font-semibold leading-[25px] text-center pt-2">
-            "{director.quote}"
+            &quot;{director.quote}&quot;
           </p>
 
           <div className="flex gap-5 pt-5 pb-8 mt-auto">
