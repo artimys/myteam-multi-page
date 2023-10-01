@@ -33,7 +33,7 @@ function Header() {
               </li>
 
               <li className="ml-auto">
-                <Link href="/contact" className="btn btn-primary-light">
+                <Link href="/contact" className="btn btn-primary">
                   contact us
                 </Link>
               </li>

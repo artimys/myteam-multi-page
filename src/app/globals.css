@@ -7,6 +7,13 @@ body {
 }
 
 @layer base {
+  h1 {
+    @apply font-bold text-[40px] leading-[40px] text-primary-white md:text-[64px] md:leading-[56px];
+  }
+
+  h2 {
+    @apply font-bold text-[32px] leading-[32px] text-primary-white xl:text-[48px] xl:leading-[48px];
+  }
   a {
     @apply font-semibold transition-colors duration-150;
   }
@@ -15,12 +22,41 @@ body {
     @apply transition-colors duration-150;
   }
 
-  h1 {
-    @apply font-bold text-[40px] leading-[40px] text-primary-white md:text-[64px] md:leading-[56px];
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    @apply bg-transparent border-b-[1px] w-full p-4 pt-1 pb-4 text-primary-white;
   }
 
-  h2 {
-    @apply font-bold text-[32px] leading-[32px] text-primary-white xl:text-[48px] xl:leading-[48px];
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: 0;
+    @apply border-secondary-rapture-blue;
+  }
+
+  input[type="text"]:-webkit-autofill,
+  input[type="text"]:-webkit-autofill:hover,
+  input[type="text"]:-webkit-autofill:focus,
+  input[type="text"]:-webkit-autofill:active,
+  input[type="email"]:-webkit-autofill:hover,
+  input[type="email"]:-webkit-autofill:focus,
+  input[type="email"]:-webkit-autofill:active,
+  input[type="email"]:-webkit-autofill {
+    box-shadow: 0 0 0 30px #79c8c7 inset !important; /* change the bg color */
+    -webkit-text-fill-color: #002529; /* change the text color */
+  }
+
+  textarea {
+    @apply p-4 pt-1;
+  }
+
+  .input-error {
+    @apply border-primary-light-coral;
+  }
+
+  .input-error::placeholder {
+    @apply text-primary-light-coral opacity-60;
   }
 }
 
@@ -32,12 +68,16 @@ body {
   @apply inline-block px-6 py-1 text-lg font-semibold border-2 cursor-pointer disabled:opacity-25 disabled:cursor-not-allowed rounded-3xl disabled:pointer-events-none;
 }
 
-.btn-primary-light {
+.btn-primary {
   @apply bg-transparent border-primary-white text-primary-white hover:bg-primary-white hover:text-secondary-dark-green;
 }
 
-.btn-primary-dark {
+.btn-primary--dark {
   @apply text-secondary-sacramento-state-green border-secondary-sacramento-state-green hover:text-primary-white hover:bg-secondary-sacramento-state-green;
+}
+
+.btn-secondary {
+  @apply px-6 bg-primary-white text-secondary-dark-green hover:bg-secondary-rapture-blue hover:border-secondary-rapture-blue;
 }
 
 /* Meet the directors button */
@@ -100,6 +140,18 @@ body {
 
   .bg-about-pattern-clients {
     @apply bg-no-repeat bg-about-4 bg-[left_-100px_top_-99px] md:bg-[left_top_-99px] xl:bg-[left_top];
+  }
+
+  /* Contact page patterns */
+
+  .bg-contact-pattern {
+    @apply bg-no-repeat
+          pb-[7.4rem]
+          sm:pb-[8rem]
+          md:pb-[7.7rem]
+          xl:pb-[7.3rem]
+          bg-[url(/images/bg-pattern-about-2-contact-1.svg),_url(/images/bg-pattern-contact-2.svg)]
+          bg-[position:left_-99px_top_-200px,_right_-99px_bottom_-99px] md:bg-[position:left_-105px_top,_right_-99px_bottom];
   }
 
   /* Shared patterns */

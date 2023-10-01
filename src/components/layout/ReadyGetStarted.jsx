@@ -10,7 +10,7 @@ function ReadyGetStarted() {
             Ready to get started?
           </h4>
 
-          <Link href="/contact" className="mt-5 btn btn-primary-dark md:mt-0">
+          <Link href="/contact" className="mt-5 btn btn-primary--dark md:mt-0">
             contact us
           </Link>
         </div>
