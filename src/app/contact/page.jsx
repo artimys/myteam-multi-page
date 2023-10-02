@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import FullBleedContainer from "@/components/layout/FullBleedContainer";
 import IconPerson from "../../../public/images/icon-person.svg";
