@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import FullBleedContainer from "@/components/layout/FullBleedContainer";
 import IconPerson from "../../../public/images/icon-person.svg";
 import IconCog from "../../../public/images/icon-cog.svg";
 import IconChart from "../../../public/images/icon-chart.svg";
+import ContactForm from "@/components/contact/ContactForm";
 
 function contact() {
   return (
@@ -32,51 +35,7 @@ function contact() {
               </ul>
             </div>
 
-            <form
-              action=""
-              className="font-semibold text-[15px] leading-[25px] space-y-5 text-primary-white"
-            >
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Name"
-                className="input-error"
-              />
-              {/* <small className="p-4 italic font-bold text-primary-light-coral text-[10px]">
-                This field is required
-              </small> */}
-
-              <input
-                type="email"
-                name=""
-                id=""
-                placeholder="Email Address"
-                className=""
-              />
-
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Company Name"
-                className=""
-              />
-
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Title"
-                className=""
-              />
-
-              <textarea name="" id="" rows="3" placeholder="Message"></textarea>
-
-              <button type="submit" className="btn btn-secondary">
-                submit
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </FullBleedContainer>

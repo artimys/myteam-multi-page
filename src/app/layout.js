@@ -20,9 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${livvic.className} bg-primary-midnight-green`}>
+      <body
+        className={`${livvic.className} bg-primary-midnight-green flex flex-col h-screen`}
+      >
         <Header />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
