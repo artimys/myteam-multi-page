@@ -8,6 +8,14 @@ function ContactForm() {
     console.log("submit");
   };
 
+  interface MyFormValues {
+    name: string;
+    email: string;
+    company: string;
+    title: string;
+    message: string;
+  }
+
   const {
     handleSubmit,
     handleChange,
@@ -121,7 +129,7 @@ function ContactForm() {
         <textarea
           name="message"
           id="message"
-          rows="3"
+          rows={3}
           placeholder="Message"
           onChange={handleChange}
           onBlur={handleBlur}

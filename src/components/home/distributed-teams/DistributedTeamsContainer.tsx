@@ -1,10 +1,13 @@
 import DistributedTeamsItem from "@/components/home/distributed-teams/DistributedTeamsItem";
+
 import IconPerson from "../../../../public/images/icon-person.svg";
 import IconCog from "../../../../public/images/icon-cog.svg";
 import IconChart from "../../../../public/images/icon-chart.svg";
 
+import { FeatureProps } from "@/types/FeatureProps.type";
+
 function DistributedTeamsContainer() {
-  const features = [
+  const features: FeatureProps[] = [
     {
       id: 1,
       title: "Experienced Individuals",
@@ -31,7 +34,7 @@ function DistributedTeamsContainer() {
   return (
     <div className="space-y-12 mt-14 lg:mt-10 text-primary-white">
       {features.map((feature) => {
-        return <DistributedTeamsItem key={feature.id} feature={feature} />;
+        return <DistributedTeamsItem key={feature.id} {...feature} />;
       })}
     </div>
   );

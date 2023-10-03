@@ -4,10 +4,13 @@ import AvatarCruz from "../../../../public/images/avatar-cruz.jpg";
 import AvatarDrake from "../../../../public/images/avatar-drake.jpg";
 import AvatarGriffin from "../../../../public/images/avatar-griffin.jpg";
 import AvatarAden from "../../../../public/images/avatar-aden.jpg";
+
 import MeetDirectorItem from "@/components/about/meet-directors/MeetDirectorItem";
 
-function MeetDirectorsGrid({ props, children }) {
-  const directors = [
+import { DirectorProps } from "@/types/DirectorProps.type";
+
+function MeetDirectorsGrid() {
+  const directors: DirectorProps[] = [
     {
       id: 1,
       name: "Nikita Marks",
@@ -64,7 +67,7 @@ function MeetDirectorsGrid({ props, children }) {
                 gap-14 md:px-12 sm:gap-x-3 sm:gap-y-16 lg:gap-x-7 lg:gap-y-20"
     >
       {directors.map((director) => {
-        return <MeetDirectorItem key={director.key} director={director} />;
+        return <MeetDirectorItem key={director.id} {...director} />;
       })}
     </div>
   );

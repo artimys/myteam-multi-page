@@ -1,10 +1,13 @@
 import AvatarKady from "../../../../public/images/avatar-kady.jpg";
 import AvatarAiysha from "../../../../public/images/avatar-aiysha.jpg";
 import AvatarArthur from "../../../../public/images/avatar-arthur.jpg";
+
 import SuccessStoriesItem from "@/components/home/success-stories/SuccessStoriesItem";
 
+import { SuccessStoriesProps } from "@/types/SuccessStoriesProps.type";
+
 function SuccessStoriesContainer() {
-  const successStories = [
+  const successStories: SuccessStoriesProps[] = [
     {
       id: 1,
       quote:
@@ -34,7 +37,7 @@ function SuccessStoriesContainer() {
   return (
     <div className="flex flex-col gap-y-14 mt-14 sm:px-16 lg:space-x-14 lg:flex-row lg:px-0 max-w-[1110px] mx-auto">
       {successStories.map((story) => {
-        return <SuccessStoriesItem key={story.id} story={story} />;
+        return <SuccessStoriesItem key={story.id} {...story} />;
       })}
     </div>
   );

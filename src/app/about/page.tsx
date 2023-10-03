@@ -6,7 +6,7 @@ import LogoTheGuardian from "../../../public/images/logo-the-guardian.png";
 import LogoTechRadar from "../../../public/images/logo-tech-radar.png";
 import LogoGadgetsNow from "../../../public/images/logo-gadgets-now.png";
 
-import MeetDirectorsGrid from "@/components/about/meet-directors/MeetDirectorsGrid.jsx";
+import MeetDirectorsGrid from "@/components/about/meet-directors/MeetDirectorsGrid";
 import ReadyGetStarted from "@/components/layout/ReadyGetStarted";
 
 function about() {
@@ -48,32 +48,20 @@ function about() {
             <h2>Some of our clients</h2>
             <ul className="flex flex-col items-center gap-12 md:flex-row">
               <li>
-                <Image src={LogoTheVerge} alt="The Verge Logo" xwidth="162" />
+                <Image src={LogoTheVerge} alt="The Verge Logo" />
               </li>
               <li>
                 {/* TODO - make smaller image at 375, aka responsive */}
-                <Image
-                  src={LogoJakartaPost}
-                  alt="Jakarta Post Logo"
-                  xwidth="166"
-                />
+                <Image src={LogoJakartaPost} alt="Jakarta Post Logo" />
               </li>
               <li>
-                <Image
-                  src={LogoTheGuardian}
-                  alt="The Guardian Logo"
-                  xwidth="162"
-                />
+                <Image src={LogoTheGuardian} alt="The Guardian Logo" />
               </li>
               <li>
-                <Image src={LogoTechRadar} alt="Tech Radar Logo" xwidth="162" />
+                <Image src={LogoTechRadar} alt="Tech Radar Logo" />
               </li>
               <li>
-                <Image
-                  src={LogoGadgetsNow}
-                  alt="Gadgets Now Logo"
-                  xwidth="162"
-                />
+                <Image src={LogoGadgetsNow} alt="Gadgets Now Logo" />
               </li>
             </ul>
           </div>
