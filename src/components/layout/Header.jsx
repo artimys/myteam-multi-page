@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FullBleedContainer from "@/components/layout/FullBleedContainer";
 import MyTeamLogo from "@/components/svg/MyTeamLogo";
+import SlideOutMenu from "@/components/slide-out-menu/SlideOutMenu";
 
 function Header() {
   return (
@@ -17,7 +18,7 @@ function Header() {
               <li>
                 <Link
                   href="/"
-                  className="text-primary-white xl:text-lg hover:text-primary-light-coral"
+                  className="text-lg text-primary-white hover:text-primary-light-coral"
                 >
                   home
                 </Link>
@@ -26,7 +27,7 @@ function Header() {
               <li>
                 <Link
                   href="/about"
-                  className="text-primary-white xl:text-lg hover:text-primary-light-coral"
+                  className="text-lg text-primary-white hover:text-primary-light-coral"
                 >
                   about
                 </Link>
@@ -39,6 +40,8 @@ function Header() {
               </li>
             </ul>
           </nav>
+
+          <SlideOutMenu />
         </div>
       </header>
     </FullBleedContainer>

@@ -32,7 +32,7 @@ module.exports = {
 
         secondary: {
           "rapture-blue": "hsl(179, 42%, 63%)", // #79c8c7
-          "polic-blue": "hsl(187, 41%, 29%)", // #2c6269
+          "police-blue": "hsl(187, 41%, 29%)", // #2c6269
           "deep-jungle-green": "hsl(186, 100%, 14%)", // #004047
           "sacramento-state-green": "hsl(186, 96%, 10%)", // #012f34
           "dark-green": "hsl(186, 100%, 8%)", // #002529
