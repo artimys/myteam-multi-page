@@ -83,11 +83,19 @@ body {
 /* Meet the directors button */
 
 .btn-panel {
-  @apply p-5 translate-y-1/2 rounded-full bg-primary-light-coral hover:bg-secondary-rapture-blue;
+  @apply p-5 transition-transform ease-in rounded-full bg-primary-light-coral hover:bg-secondary-rapture-blue;
 }
 
-.btn-panel-active {
+.btn-panel__rotate {
   @apply rotate-45 bg-secondary-rapture-blue hover:bg-primary-light-coral;
+}
+
+.director-panel {
+  @apply -top-full transition-[top_visibility] duration-300 ease-in-out invisible;
+}
+
+.director-panel__slidein {
+  @apply top-0 visible;
 }
 
 @layer utilities {
@@ -127,15 +135,11 @@ body {
   /* About page patterns */
 
   .bg-about-pattern-directors {
-    @apply bg-no-repeat pb-[7.4rem] sm:pb-[8rem] lg:pb-[10rem] bg-[url(/images/bg-pattern-about-2-contact-1.svg),_url(/images/bg-pattern-home-4-about-3.svg)] bg-[position:left_-99px_top_-100px,_right_bottom] md:bg-[position:left_-99px_top,_right_bottom];
+    @apply bg-no-repeat pb-[4rem] lg:pb-[7rem] bg-[url(/images/bg-pattern-about-2-contact-1.svg),_url(/images/bg-pattern-home-4-about-3.svg)] bg-[position:left_-99px_top_-100px,_right_bottom] md:bg-[position:left_-99px_top,_right_bottom];
   }
 
   .bg-about-pattern-right {
     @apply bg-no-repeat bg-about-mobile-nav-1 bg-[right_-99px_bottom_-99px] md:bg-[right_-99px_bottom] pb-28;
-  }
-
-  .bg-about-pattern-directors {
-    @apply bg-no-repeat pb-[7.4rem] sm:pb-[8rem] lg:pb-[10rem] bg-[url(/images/bg-pattern-about-2-contact-1.svg),_url(/images/bg-pattern-home-4-about-3.svg)] bg-[position:left_-99px_top_-100px,_right_bottom] md:bg-[position:left_-99px_top,_right_bottom];
   }
 
   .bg-about-pattern-clients {

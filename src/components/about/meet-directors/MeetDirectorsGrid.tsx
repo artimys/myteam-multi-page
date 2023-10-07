@@ -64,7 +64,7 @@ function MeetDirectorsGrid() {
   return (
     <div
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1200px] mx-auto
-                gap-14 md:px-12 sm:gap-x-3 sm:gap-y-16 lg:gap-x-7 lg:gap-y-20"
+                md:px-12 sm:gap-3 lg:gap-x-7 lg:gap-y-3"
     >
       {directors.map((director) => {
         return <MeetDirectorItem key={director.id} {...director} />;
