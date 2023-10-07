@@ -18,9 +18,13 @@ function MeetDirectorItem({ name, role, image, quote }: DirectorProps) {
   };
 
   return (
-    <div className="relative flex flex-col items-center pt-8 bg-secondary-sacramento-state-green text-primary-white">
-      {showMoreInfo ? (
-        <div className="absolute top-0 flex flex-col items-center w-full h-full p-8 lg:px-2 xl:px-12 bg-secondary-dark-green">
+    <div>
+      <div className="relative flex flex-col items-center pt-8 overflow-hidden pb-14 bg-secondary-sacramento-state-green text-primary-white">
+        <div
+          className={`absolute flex flex-col items-center w-full h-full p-8 lg:px-2 xl:px-12 bg-secondary-dark-green director-panel ${
+            showMoreInfo ? "director-panel__slidein" : null
+          }`}
+        >
           <strong className="text-lg text-secondary-rapture-blue">
             {name}
           </strong>
@@ -47,30 +51,30 @@ function MeetDirectorItem({ name, role, image, quote }: DirectorProps) {
             </Link>
           </div>
         </div>
-      ) : null}
 
-      <Image
-        src={image}
-        alt={name}
-        width={90}
-        className="border-2 border-white rounded-full"
-      />
+        <Image
+          src={image}
+          alt={name}
+          width={90}
+          className="border-2 border-white rounded-full"
+        />
 
-      <div className="flex flex-col mt-3 text-center">
-        <strong className="text-lg font-bold text-secondary-rapture-blue">
-          {name}
-        </strong>
-        <em className="text-sm font-medium">{role}</em>
+        <div className="flex flex-col mt-3 text-center">
+          <strong className="text-lg font-bold text-secondary-rapture-blue">
+            {name}
+          </strong>
+          <em className="text-sm font-medium">{role}</em>
+        </div>
       </div>
 
-      <button
-        className={`${
-          showMoreInfo ? "btn-panel btn-panel-active" : "btn-panel"
-        }`}
-        onClick={toggleMoreInfo}
-      >
-        <Image src={IconCross} alt={`${showMoreInfo ? "Close" : "Open"}`} />
-      </button>
+      <div className="text-center -translate-y-1/2">
+        <button
+          className={`btn-panel ${showMoreInfo ? "btn-panel__rotate" : null}`}
+          onClick={toggleMoreInfo}
+        >
+          <Image src={IconCross} alt={`${showMoreInfo ? "Close" : "Open"}`} />
+        </button>
+      </div>
     </div>
   );
 }
