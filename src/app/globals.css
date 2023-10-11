@@ -14,12 +14,18 @@ body {
   h2 {
     @apply font-bold text-[32px] leading-[32px] text-primary-white xl:text-[48px] xl:leading-[48px];
   }
+
   a {
     @apply font-semibold transition-colors duration-150;
   }
 
   button {
     @apply transition-colors duration-150;
+  }
+
+  a,
+  button {
+    @apply focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-primary-light-coral;
   }
 
   input[type="text"],
