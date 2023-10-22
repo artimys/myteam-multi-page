@@ -1,9 +1,13 @@
 import Link from "next/link";
 import IconClose from "@/components/svg/IconClose";
 
-function MobileNav({ closeMenuHandler }) {
+function MobileNav({ closeMenuHandler, isOpen }) {
   return (
-    <nav className="fixed top-0 right-0 z-50 min-h-screen pt-12 bg-no-repeat bg-secondary-police-blue w-[255px] bg-about-mobile-nav-1 bg-[bottom_right_-99px] md:hidden">
+    <nav
+      className={`fixed top-0 z-50 min-h-screen pt-12 bg-no-repeat bg-secondary-police-blue w-[255px] bg-about-mobile-nav-1 bg-[bottom_right_-99px] md:hidden
+         mobile-nav ${isOpen ? "mobile-nav__slidein" : ""}
+    `}
+    >
       <div className="flex justify-end mt-1 mb-10 mr-6">
         <button onClick={closeMenuHandler}>
           <IconClose />
