@@ -22,7 +22,7 @@ function MeetDirectorItem({ name, role, image, quote }: DirectorProps) {
       <div className="relative flex flex-col items-center pt-8 overflow-hidden pb-14 bg-secondary-sacramento-state-green text-primary-white">
         <div
           className={`absolute flex flex-col items-center w-full h-full p-8 lg:px-2 xl:px-12 bg-secondary-dark-green director-panel ${
-            showMoreInfo ? "director-panel__slidein" : null
+            showMoreInfo ? "director-panel__slidein" : ""
           }`}
         >
           <strong className="text-lg text-secondary-rapture-blue">
@@ -69,7 +69,7 @@ function MeetDirectorItem({ name, role, image, quote }: DirectorProps) {
 
       <div className="text-center -translate-y-1/2">
         <button
-          className={`btn-panel ${showMoreInfo ? "btn-panel__rotate" : null}`}
+          className={`btn-panel ${showMoreInfo ? "btn-panel__rotate" : ""}`}
           onClick={toggleMoreInfo}
         >
           <Image src={IconCross} alt={`${showMoreInfo ? "Close" : "Open"}`} />

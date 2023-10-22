@@ -14,7 +14,6 @@ function SlideOutMenu() {
 
   const closeMenu = (): void => {
     setOpenMenu(false);
-    console.log("close menu");
   };
 
   return (
@@ -25,7 +24,7 @@ function SlideOutMenu() {
 
       {openMenu && <Overlay closeMenuHandler={closeMenu} />}
 
-      {openMenu && <MobileNav closeMenuHandler={closeMenu} />}
+      <MobileNav closeMenuHandler={closeMenu} isOpen={openMenu} />
     </>
   );
 }
