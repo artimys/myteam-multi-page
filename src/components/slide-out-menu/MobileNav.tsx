@@ -4,7 +4,7 @@ import IconClose from "@/components/svg/IconClose";
 function MobileNav({ closeMenuHandler }) {
   return (
     <nav className="fixed top-0 right-0 z-50 min-h-screen pt-12 bg-no-repeat bg-secondary-police-blue w-[255px] bg-about-mobile-nav-1 bg-[bottom_right_-99px] md:hidden">
-      <div className="flex justify-end mb-10 mr-7">
+      <div className="flex justify-end mt-1 mb-10 mr-6">
         <button onClick={closeMenuHandler}>
           <IconClose />
         </button>
