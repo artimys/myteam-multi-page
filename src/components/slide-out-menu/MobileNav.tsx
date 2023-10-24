@@ -1,5 +1,6 @@
 import Link from "next/link";
 import IconClose from "@/components/svg/IconClose";
+import Attribution from "@/components/layout/Attribution";
 
 function MobileNav({ closeMenuHandler, isOpen }) {
   return (
@@ -45,6 +46,8 @@ function MobileNav({ closeMenuHandler, isOpen }) {
           </Link>
         </li>
       </ul>
+
+      <Attribution />
     </nav>
   );
 }
