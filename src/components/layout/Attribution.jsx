@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Attribution() {
   return (
-    <div className="absolute text-white bottom-14 px-14">
+    <div className="absolute text-white bottom-10 px-14">
       <p>
         Challenge by <br />
         <Link
