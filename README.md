@@ -14,6 +14,7 @@ This is a solution to the [myteam multi-page website](https://www.frontendmentor
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
+- [Getting Started with NextJS](./README-Nextjs.md)
 
 ## Overview
 
