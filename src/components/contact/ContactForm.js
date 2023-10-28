@@ -53,7 +53,7 @@ function ContactForm() {
       email: yup
         .string()
         .required("This field is required")
-        .email("Please enter a valid email address"),
+        .email("Please use a valid email address"),
       company: yup.string().required("This field is required"),
       title: yup.string().required("This field is required"),
       message: yup.string().required("This field is required"),
