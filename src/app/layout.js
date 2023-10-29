@@ -19,16 +19,18 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const mainContentId = "main-content";
+
   return (
     <html lang="en">
       <body
         className={`${livvic.className} bg-primary-midnight-green flex flex-col h-screen`}
       >
-        <SkipToMainContent />
+        <SkipToMainContent targetId={mainContentId} />
 
         <Header />
 
-        <main id="main-content" className="flex-1">
+        <main id={mainContentId} className="flex-1 outline-none" tabIndex={-1}>
           {children}
         </main>
 
