@@ -1,19 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
 import FullBleedContainer from "@/components/layout/FullBleedContainer";
-import MyTeamLogo from "@/components/svg/MyTeamLogo";
 import SlideOutMenu from "@/components/slide-out-menu/SlideOutMenu";
+import Logo from "../../../public/images/logo.svg";
 
 function Header() {
   return (
     <FullBleedContainer classNames="bg-primary-midnight-green">
       <header className="container pt-10 pb-20 md:pb-28 md:pt-16">
-        <div className="flex flow-row max-w-[1110px] mx-auto">
-          {/* TODO sm md 128px, lg xl 160 */}
-          <Link href="/" className="mr-20">
-            <MyTeamLogo />
-          </Link>
+        <div className="flex flow-row max-w-[1110px] mx-auto items-center">
+          <div className="w-[128px] h-[32px] lg:w-[160px] lg:h-[40px] mr-12 lg:mr-20">
+            <Link href="/">
+              <Image src={Logo} alt="myteam Logo" />
+            </Link>
+          </div>
 
-          <nav className="hidden w-full md:block">
+          <nav className="flex-1 hidden md:block">
             <ul className="flex flex-row items-center gap-10">
               <li>
                 <Link

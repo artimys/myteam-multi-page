@@ -95,7 +95,6 @@ function ContactForm() {
           value={values.email}
           onChange={handleChange}
           // onBlur={handleBlur}
-          validateOnChange={true}
           className={`${errors.email && touched.email ? "input-error" : ""}`}
         />
 
