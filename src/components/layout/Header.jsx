@@ -9,8 +9,7 @@ function Header() {
     <FullBleedContainer classNames="bg-primary-midnight-green">
       <header className="container pt-10 pb-20 md:pb-28 md:pt-16">
         <div className="flex flow-row max-w-[1110px] mx-auto items-center">
-          {/* sm md 128px x 32px, lg xl 160px x 40px */}
-          <div className="w-[128px] h-[32px] lg:w-[160px] lg:h-[40px] mr-20">
+          <div className="w-[128px] h-[32px] lg:w-[160px] lg:h-[40px] mr-12 lg:mr-20">
             <Link href="/">
               <Image src={Logo} alt="myteam Logo" />
             </Link>

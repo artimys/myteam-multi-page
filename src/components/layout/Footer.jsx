@@ -1,18 +1,17 @@
 import Link from "next/link";
-import MyTeamLogo from "@/components/svg/MyTeamLogo";
+import Image from "next/image";
 import IconFacebook from "@/components/svg/IconFacebook";
 import IconPinterest from "@/components/svg/IconPinterest";
 import IconTwitter from "@/components/svg/IconTwitter";
+import Logo from "../../../public/images/logo.svg";
 
 function Footer() {
   return (
-    <footer className="w-full px-12 sm:px-10 pt-20 pb-16 xl:py-14 text-[#979797] bg-secondary-dark-green font-semibold text-base">
+    <footer className="w-full px-12 sm:px-10 pt-16 pb-12 xl:py-14 text-[#979797] bg-secondary-dark-green font-semibold text-base">
       <div className="grid justify-center grid-cols-1 mx-auto text-center md:grid-cols-2 xl:grid-cols-4 max-w-[1110px]">
         <section className="flex flex-col items-center md:justify-between md:items-start">
-          <div>
-            {/* TODO make responsive 1400:w160px */}
-            {/* <Image src={Logo} alt="Logo" width="160" xwidth="96" /> */}
-            <MyTeamLogo />
+          <div className="w-[96px] h-[24px] lg:w-[160px] lg:h-[40px]">
+            <Image src={Logo} alt="myteam Logo" />
           </div>
 
           <nav className="mt-9">
