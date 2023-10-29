@@ -48,19 +48,23 @@ function about() {
             <h2>Some of our clients</h2>
             <ul className="flex flex-col items-center gap-12 md:flex-row">
               <li>
+                {/* 146.56 x 24.19, md:103 x 17, lg:165 x 28 */}
                 <Image src={LogoTheVerge} alt="The Verge Logo" />
               </li>
               <li>
-                {/* TODO - make smaller image at 375, aka responsive */}
+                {/* 162.21 x 19.92, md:114 x 14, lg:184 x 23 */}
                 <Image src={LogoJakartaPost} alt="Jakarta Post Logo" />
               </li>
               <li>
+                {/* 159.37 x 24.19, md:112 x 17, lg:180 x 28 */}
                 <Image src={LogoTheGuardian} alt="The Guardian Logo" />
               </li>
               <li>
+                {/* 146.56 x 24.19, md:103 x 17, lg:165 x 28 */}
                 <Image src={LogoTechRadar} alt="Tech Radar Logo" />
               </li>
               <li>
+                {/* 86.8 x 39.84, md:61 x 28, lg:98 x 45 */}
                 <Image src={LogoGadgetsNow} alt="Gadgets Now Logo" />
               </li>
             </ul>
