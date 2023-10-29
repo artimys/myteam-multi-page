@@ -60,6 +60,7 @@ function Footer() {
               <Link
                 href="https://facebook.com"
                 target="_blank"
+                aria-label="Vist our Facebook page"
                 rel="noopener noreferrer"
               >
                 <IconFacebook />
@@ -70,6 +71,7 @@ function Footer() {
               <Link
                 href="https://pinterest.com"
                 target="_blank"
+                aria-label="Vist our Pinterest page"
                 rel="noopener noreferrer"
               >
                 <IconPinterest />
@@ -80,6 +82,7 @@ function Footer() {
               <Link
                 href="https://twitter.com"
                 target="_blank"
+                aria-label="Vist our Twitter page"
                 rel="noopener noreferrer"
               >
                 <IconTwitter />
