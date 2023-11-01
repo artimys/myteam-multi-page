@@ -18,7 +18,14 @@ function SlideOutMenu() {
 
   return (
     <>
-      <button className="ml-auto md:hidden" onClick={toggleMenu}>
+      <button
+        className="ml-auto md:hidden"
+        id="menu-toggle"
+        aria-label="Open Menu"
+        aria-expanded={openMenu}
+        aria-controls="menu"
+        onClick={toggleMenu}
+      >
         <IconHamburger />
       </button>
 
