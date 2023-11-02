@@ -7,7 +7,7 @@ import Logo from "../../../public/images/logo.svg";
 function Header() {
   return (
     <FullBleedContainer classNames="bg-primary-midnight-green">
-      <header className="container pt-10 pb-20 md:pb-28 md:pt-16">
+      <header className="container pt-10 pb-20 md:pb-28 md:pt-16 lg:pt-20">
         <div className="flex flow-row max-w-[1110px] mx-auto items-center">
           <div className="w-[128px] h-[32px] lg:w-[160px] lg:h-[40px] mr-12 lg:mr-20">
             <Link href="/">

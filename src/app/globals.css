@@ -124,7 +124,9 @@ body {
   /* Home page patterns */
 
   .bg-home-two-patterns {
-    @apply bg-no-repeat pb-48 bg-[url(/images/bg-pattern-home-1.svg),_url(/images/bg-pattern-home-2.svg)] bg-[position:-200px_top,_center_bottom] xl:bg-[position:-100px_top,_right_165px_bottom];
+    @apply bg-no-repeat pb-48 md:pb-60
+          bg-[url(/images/bg-pattern-home-1.svg),_url(/images/bg-pattern-home-2.svg)] bg-[position:-200px_top,_center_bottom]
+          xl:bg-[position:-100px_top,_right_165px_bottom];
   }
 
   .bg-home-pattern-distributed {
